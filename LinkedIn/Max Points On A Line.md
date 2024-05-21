@@ -2,9 +2,9 @@
 
 **Solution grade:** Optimal  
 **Concepts:** ABCD waLA
-**Time complexity:** O(n)  
+**Time complexity:** O(n^2)  
 **Space complexity:** O(n)  
-**LeetCode Link:** [Shortest Word Distance II](https://leetcode.com/problems/KADASBDVBDSVBKJDS)
+**LeetCode Link:** [Max Points](https://leetcode.com/problems/max-points-on-a-line)
 
 ## Logic
 
