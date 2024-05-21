@@ -8,7 +8,7 @@
 
 ## Logic
 
-### Example (Use some other example in interviews)
+
 
 
 ### Solution 1
