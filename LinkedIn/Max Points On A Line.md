@@ -4,7 +4,8 @@
 **Concepts:** HashMap, Maths, Slope
 **Time complexity:** O(n^2)  
 **Space complexity:** O(n)  
-**LeetCode Link:** [Max Points](https://leetcode.com/problems/max-points-on-a-line)
+**LeetCode Link:** [Max Points](https://leetcode.com/problems/max-points-on-a-line)<br>
+**Youtube link:** [Youtube](https://www.youtube.com/watch?v=AzER0wuL0QY)
 
 ## Logic
 
