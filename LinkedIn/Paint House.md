@@ -2,9 +2,9 @@
 
 **Solution grade:** Optimal  
 **Concepts:** Dynamic Programming, Arrays
-**Time complexity:** O(n*m)  
-**Space complexity:** O(n*m)
-**LeetCode Link:** [Paint House](https://leetcode.com/problems/paint-house)
+**Time complexity:** O(n\*m)  
+**Space complexity:** O(n\*m)
+**LeetCode Link:** [Paint House](https://leetcode.com/problems/paint-house)<br>
 **[Youtube Link]** : [Youtube](https://www.youtube.com/watch?v=-w67-4tnH5U)
 
 ## Logic
@@ -36,11 +36,9 @@ H3  12 + min(5,8) = 17     3 + min(8,8) = 11     7 + min(5 + 8) = 20
 
 **Simple Formula** 
 
- prices[home][red]    = costs[home][red]    + minimum _of(prices[home -1 ][green] , prices[home -1 ][blue]) 
- 
- prices[home][blue]   = costs[home][blue]   + minimum _of(prices[home -1 ][red] , prices[home -1 ][blue]) 
- 
- prices[home][green]  = costs[home][green]  + minimum _of(prices[home -1 ][red] , prices[home -1 ][blue]) 
+ prices[home][red]    = costs[home][red]    + minimum _of(prices[home -1 ][green] , prices[home -1 ][blue]) <br>
+ prices[home][blue]   = costs[home][blue]   + minimum _of(prices[home -1 ][red] , prices[home -1 ][blue]) <br>
+ prices[home][green]  = costs[home][green]  + minimum _of(prices[home -1 ][red] , prices[home -1 ][blue]) <br>
 
 minimum in the last row will be the answer. (11 in above case)
 
