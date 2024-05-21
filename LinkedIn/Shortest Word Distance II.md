@@ -4,7 +4,7 @@
 **Concepts:** HashMap
 **Time complexity:** O(n)  
 **Space complexity:** O(n)  
-**LeetCode Link:** [Shortest Word Distance II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+**LeetCode Link:** [Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/)
 
 ## Logic
 
