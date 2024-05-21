@@ -1,7 +1,7 @@
 # Problem Name
 
 **Solution grade:** Optimal  
-**Concepts:** ABCD waLA
+**Concepts:** HashMap, Maths, Slope
 **Time complexity:** O(n^2)  
 **Space complexity:** O(n)  
 **LeetCode Link:** [Max Points](https://leetcode.com/problems/max-points-on-a-line)
@@ -65,3 +65,70 @@ class Solution {
 }
 ```
 
+
+### Optimal solution
+
+
+Above solution mei if we see, there were 3 points i,j and k. If slope(i,j) == slope(j,k) then it means i , j & k are all on the same line.
+Keeping the above in mind what we can do is that we can fix and i. for that i iterate on all points j1, j2 and j3 and so on, calculate their slope and keep the count against the slope.
+```
+for example [[1,1] , [2,2], [2,3], [3,3]]
+```
+when i = [1,1]
+```
+
+map = {
+  slope_1 = 2
+  slope_2 = 1
+}
+```
+This means there are atleast 3 ( 2 + 1) points on the same line with i whose slope is 1. <br>
+
+Now, when i = [2,3]
+```
+map = {
+  slope_2 = 1 ([1,1])
+  slope_1 = 1 ([2,2])
+  slope_0 = 1 ([3,3])
+}
+```
+Similarly for others and so on.
+
+Note : since slope (tan(theta) coule go to infinity at times, we rather store theta the angle using Math.atan2(dy,dx) in the map
+
+- Time complexity: O(n^2)
+- Space complexity: O(n) [New hashmap is being created each time with max size going not beyond n]
+
+
+
+## Code
+
+```java
+
+class Solution {
+    public int maxPoints(int[][] points) {
+        int maxCount = 0 ; 
+        if(points.length == 1) return 1;
+        for(int i = 0 ;  i < points.length; i++)
+        {
+            HashMap<Double, Integer> countMap = new HashMap<>();
+            for(int j = 0 ;  j < points.length; j++)
+            {
+                if (i != j)
+                {
+                    int dy = points[j][1] - points[i][1];
+                    int dx = points[j][0] - points[i][0];
+                    Double angle = Math.atan2(dy,dx);
+                    countMap.put(angle, countMap.getOrDefault(angle,0) + 1);
+                }
+            }
+           
+            for(double angle : countMap.keySet())
+            {
+                maxCount = Math.max(maxCount, countMap.get(angle) + 1); // 1 extra because i ko consider kar lete hai
+            }
+        }
+        return maxCount;
+    }
+}
+```
