@@ -5,6 +5,7 @@
 **Time complexity:** O(n*m)  
 **Space complexity:** O(n*m)
 **LeetCode Link:** [Paint House](https://leetcode.com/problems/paint-house)
+**[Youtube Link]** : [Youtube](https://www.youtube.com/watch?v=-w67-4tnH5U)
 
 ## Logic
 
