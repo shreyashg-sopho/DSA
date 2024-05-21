@@ -26,9 +26,12 @@ Create a 2D matrix to store the total cost. We will be computing cost for each c
 | **B** | 12             | 6 + min(2,4) = 8  | 7 + min(5,8) = 12 + 5 = 17 |
 
 **Simple Formula** 
- prices[home][red]    = costs[home][red]    + minimum _of(prices[home -1 ][green] , prices[home -1 ][blue])
- prices[home][blue]   = costs[home][blue]   + minimum _of(prices[home -1 ][red] , prices[home -1 ][blue])
- prices[home][green]  = costs[home][green]  + minimum _of(prices[home -1 ][red] , prices[home -1 ][blue])
+
+ prices[home][red]    = costs[home][red]    + minimum _of(prices[home -1 ][green] , prices[home -1 ][blue]) 
+ 
+ prices[home][blue]   = costs[home][blue]   + minimum _of(prices[home -1 ][red] , prices[home -1 ][blue]) 
+ 
+ prices[home][green]  = costs[home][green]  + minimum _of(prices[home -1 ][red] , prices[home -1 ][blue]) 
 
 - Time complexity: O(n*m)  
 - Space complexity: O(n*m)  
