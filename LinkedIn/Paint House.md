@@ -9,6 +9,8 @@
 ## Logic
 
 NOTE  : CAN USE THIS EXAMPLE. NOT ANYWHRE ON INTERNET.
+
+input : [[2,4,2],[6,3,3],[6,6,7]]
     
 |       | **H1** | **H2** | **H3** |
 |-------|--------|--------|--------|
@@ -19,11 +21,17 @@ NOTE  : CAN USE THIS EXAMPLE. NOT ANYWHRE ON INTERNET.
 
 Create a 2D matrix to store the total cost. We will be computing cost for each color for each house and ensure that a colour used just before is not being used again.
 
-|       | **H1**         | **H2**            | **H3**                     |
+    R.                     B.                    G.
+H1  2                      4                     12  
+H2  4 + min(4 +12) = 8     3 + min(2, 12) =  5   6 +min(2,4) = 8
+H3  12 + min(5,8) = 17     3 + min(8,8) = 11     7 + min(5 + 8) = 20
+
+
+|       | **R**         | **G**            | **B**                     |
 |-------|----------------|-------------------|----------------------------|
-| **R** | 2              | 4 + min(4,12) = 8 | 12 + min(5,8) = 17         |
-| **G** | 4              | 3 + min(2,12) = 5 | 3 + min(8,8) = 11          |
-| **B** | 12             | 6 + min(2,4) = 8  | 7 + min(5,8) = 12 + 5 = 17 |
+| **H1** | 2              | 4   | 12       |
+| **H2** | 4 + min(4 +12) = 8               | 3 + min(2, 12) =  5  |6 +min(2,4) = 8          |
+| **H3** | 12 + min(5,8) = 17              |  3 + min(8,8) = 11   | 7 + min(5 + 8) = 20|
 
 **Simple Formula** 
 
@@ -32,6 +40,9 @@ Create a 2D matrix to store the total cost. We will be computing cost for each c
  prices[home][blue]   = costs[home][blue]   + minimum _of(prices[home -1 ][red] , prices[home -1 ][blue]) 
  
  prices[home][green]  = costs[home][green]  + minimum _of(prices[home -1 ][red] , prices[home -1 ][blue]) 
+
+minimum in the last row will be the answer. (11 in above case)
+
 
 - Time complexity: O(n*m)  
 - Space complexity: O(n*m)  
