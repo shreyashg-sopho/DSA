@@ -5,6 +5,7 @@
 **Time complexity:** O(n)  
 **Space complexity:** O(n)  
 **LeetCode Link:** [Shortest Word Distance II](https://leetcode.com/problems/KADASBDVBDSVBKJDS)
+**Youtube link:** [Youtube](https://www.youtube.com/watch?v=AzER0wuL0QY)
 
 ## Logic
 
