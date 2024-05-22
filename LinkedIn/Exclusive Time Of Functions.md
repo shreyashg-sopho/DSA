@@ -28,9 +28,10 @@ The logic will be:
   - Set time_passed_till_now = end_time + 1
 
 
-**Input:**
+**Example:** (Demoable!)
 
-CAN USE THIS EXAMPLE. BUT IF THEY ASK FOR A DEMO, USE A SIMPLE EXAMPLE PLEASE
+
+Input : 
 n = 3<br>
 logs = ["1:start:0", "0:start:2", "1:start:3", "2:start:4", "2:end:4", "0:end:6", "1:end:7", "1:end:8"]
 
@@ -47,9 +48,7 @@ logs = ["1:start:0", "0:start:2", "1:start:3", "2:start:4", "2:end:4", "0:end:6"
 | "1:end:8"     | Pop 1             |                     | [2, 6, 1]            | (curr - prev_end + 1) = (8 - 7 + 1) | 9 (curr + 1)|
 
 
-**Output:**
-
-[6,2,1]
+Output  : [6,2,1]
 
 
 
