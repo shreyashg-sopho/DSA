@@ -95,7 +95,7 @@ map = {
 ```
 Similarly for others and so on.
 
-Note : since slope (tan(theta) coule go to infinity at times, we rather store theta the angle using Math.atan2(dy,dx) in the map
+Note : since slope (tan(theta)) coule go to infinity at times, we rather store theta the angle using Math.atan2(dy,dx) in the map
 
 - Time complexity: O(n^2)
 - Space complexity: O(n) [New hashmap is being created each time with max size going not beyond n]
