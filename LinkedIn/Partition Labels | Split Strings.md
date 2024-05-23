@@ -1,11 +1,11 @@
 # Problem Name
 
 **Solution grade:** Optimal  
-**Concepts:** ABCD waLA
+**Concepts:** hashMap, Hashing, 2 pointer
 **Time complexity:** O(n)  
-**Space complexity:** O(n)  
-**LeetCode Link:** [Shortest Word Distance II](https://leetcode.com/problems/KADASBDVBDSVBKJDS)
-**Youtube link:** [Youtube](https://www.youtube.com/watch?v=AzER0wuL0QY)
+**Space complexity:** O(1)   {uses a hash of size 26, so constant)
+**LeetCode Link:** [Partition Labels](https://leetcode.com/problems/partition-labels)
+
 
 ## Logic
 
@@ -14,7 +14,27 @@
 
 ### Solution 1
 
-Create a hashMap where we are storing all the indexes........
+Create a hashMap where we are storing last occurence of each String.
+
+Do dry run using the follwing logic, and you will get the intution.
+```
+
+start = 0 ; i = 0 , j = 0
+while ( i < size)
+{
+   currChar = s.getCharAt(i); // curr character
+   j = Max( j, lastOccurenceMap.get(currChar)) # maxEnd  = end of this or last character's maxEnd.
+   if(i == j) // curr = maxEnd 
+   {
+     // this means we have found the end of a partition
+     partitionLenght =  i - start + 1;
+     result.add(partitionLenght);
+     
+   }
+}
+
+
+```
 
 - Time complexity: O(n)
 - Space complexity: O(n)
