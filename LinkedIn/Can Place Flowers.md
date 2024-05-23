@@ -38,6 +38,7 @@ class Solution {
                     {
                         flowerbed[i] = 1;
                         flipped++;
+                        if (flipped >= n) return true; // Return if we have already reached out target.
                     }
             }
             
