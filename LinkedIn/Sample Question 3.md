@@ -9,28 +9,33 @@
 
 ## Logic
 
+traingle has a property that for 3 lengths to find a triangle, some of any two must always be greater that the third one.
 
 
+### Brute Force 1
 
-### Solution 1
-
-Create a hashMap where we are storing all the indexes........
-
-- Time complexity: O(n)
-- Space complexity: O(n)
 
 
 ### Optimal Code
 
 ```java
-//OPTIMAL
-import java.util.*;
-
-class WordDistance {
-   .
-   .
-   .
-   .
-
- 
+class Solution {
+    public int triangleNumber(int[] nums) {
+        int count = 0;
+        for(int i = 0 ; i < nums.length - 2; i++)
+        {
+            {
+                for(int j = i + 1; j < nums.length -1; j++)
+                {
+                    for(int k = j +1 ; k < nums.length ; k++)
+                    {
+                         if ((nums[i] + nums[j] > nums[k]) && (nums[j] + nums[k] > nums[i]) && (nums[i] + nums[k] > nums[j]))
+                            {count ++;}
+                    }
+                }
+            }
+        }
+        return count;
+    }
 }
+```
