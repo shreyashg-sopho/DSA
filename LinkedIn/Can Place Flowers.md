@@ -1,7 +1,7 @@
 # Can Place Flowers
 
 **Solution grade:** Optimal  
-**Concepts:** ABCD waLA
+**Concepts:** Array , Greedy
 **Time complexity:** O(n)  
 **Space complexity:** O(1)  
 **LeetCode Link:** [Can Place Flowers](https://leetcode.com/problems/can-place-flowers)
