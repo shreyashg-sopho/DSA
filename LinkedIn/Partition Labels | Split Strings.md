@@ -1,4 +1,4 @@
-# Problem Name
+# Partition Labels
 
 **Solution grade:** Optimal  
 **Concepts:** hashMap, Hashing, 2 pointer
