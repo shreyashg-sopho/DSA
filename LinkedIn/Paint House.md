@@ -1,4 +1,4 @@
-# Problem Name
+# Paint House
 
 **Solution grade:** Optimal  
 **Concepts:** Dynamic Programming, Arrays
