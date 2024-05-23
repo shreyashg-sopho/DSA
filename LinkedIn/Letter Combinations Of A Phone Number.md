@@ -14,7 +14,7 @@
 
 ### Optimal Solution 
 
-Create a hashMapfoor nums to letters mapping first. Then just look at this :
+Create a hashMap for nums to letters mapping first. Then just look at this :
 ```
 Example : 2   3   5
          abc def jkl
