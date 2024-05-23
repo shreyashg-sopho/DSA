@@ -1,4 +1,4 @@
-# Problem Name
+# Max Points On a Line
 
 **Solution grade:** Optimal  
 **Concepts:** HashMap, Maths, Slope
