@@ -1,9 +1,9 @@
-# Problem Name
+# Word Ladder
 
 **Solution grade:** Optimal  
 **Concepts:** BFS
-**Time complexity:** O(n)  
-**Space complexity:** O(n)  
+**Time complexity:**  O(L * 26 * N)
+**Space complexity:** O(N)
 **LeetCode Link:** [Word Ladder](https://leetcode.com/problems/word-ladder)
 **Youtube link:** [Youtube](https://www.youtube.com/watch?v=tRPda0rcf8E)
 
@@ -97,7 +97,7 @@ Convert List to set and check what all possible steps from hot exists.
 
 
 
-- Time complexity: O(n)
+- Time complexity: O(l * 26 * n)   [l is length of each word, number of words]
 - Space complexity: O(n)
 
 
