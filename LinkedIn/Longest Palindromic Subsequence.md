@@ -1,9 +1,9 @@
 # Longest Palindromic Subsequence
 
 **Solution grade:** Optimal  
-**Concepts:** Dynamic Programming , DP
+**Concepts:** Dynamic Programming , DP <br>
 **Time complexity:** O(n^2)  
-**Space complexity:** O(n)  
+**Space complexity:** O(n)  [Super optimal]
 **LeetCode Link:** [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence)
 
 
