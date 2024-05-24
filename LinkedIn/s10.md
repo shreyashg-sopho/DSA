@@ -1,0 +1,36 @@
+# Problem Name
+
+**Solution grade:** Optimal  
+**Concepts:** ABCD waLA
+**Time complexity:** O(n)  
+**Space complexity:** O(n)  
+**LeetCode Link:** [Shortest Word Distance II](https://leetcode.com/problems/KADASBDVBDSVBKJDS)
+**Youtube link:** [Youtube](https://www.youtube.com/watch?v=AzER0wuL0QY)
+
+## Logic
+
+
+
+
+### Solution 1
+
+Create a hashMap where we are storing all the indexes........
+
+- Time complexity: O(n)
+- Space complexity: O(n)
+
+
+### Optimal Code
+
+```java
+//OPTIMAL
+import java.util.*;
+
+class WordDistance {
+   .
+   .
+   .
+   .
+
+ 
+}
