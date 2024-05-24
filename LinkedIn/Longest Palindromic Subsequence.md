@@ -3,7 +3,7 @@
 **Solution grade:** Optimal  
 **Concepts:** Dynamic Programming , DP <br>
 **Time complexity:** O(n^2)  
-**Space complexity:** O(n)  [Super optimal]
+**Space complexity:** O(n)  [Super optimal] <br>
 **LeetCode Link:** [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence)
 
 
