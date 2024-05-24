@@ -1,11 +1,11 @@
-# Problem Name
+# Longest Palindromic Subsequence
 
 **Solution grade:** Optimal  
 **Concepts:** Dynamic Programming , DP
 **Time complexity:** O(n^2)  
 **Space complexity:** O(n)  
-**LeetCode Link:** [Shortest Word Distance II](https://leetcode.com/problems/KADASBDVBDSVBKJDS)
-**Youtube link:** [Youtube](https://www.youtube.com/watch?v=AzER0wuL0QY)
+**LeetCode Link:** [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence)
+
 
 ## Logic
 
@@ -25,14 +25,14 @@ else
 
 Create a 2D DP array and opulate the value using above formula.
 
-      |   |   |b | a | b | b | b |
-      |---|---|---|---|---|---|--|
-      |   | 0 | 0 | 0 | 0 | 0 | 0 |
-      | b | 0 | 1 | 1 | 1 | 1 | 1 |
-      | b | 0 | 1 | 1 | 2 | 2 | 2 |
-      | b | 0 | 1 | 1 | 2 | 3 | 3 |
-      | a | 0 | 1 | 2 | 2 | 3 | 3 |
-      | b | 0 | 1 | 2 | 3 | 3 | 4 |
+|   | i row | b | a | b | b | b |
+|---|---|---|---|---|---|---|
+|  j col | 0 | 0 | 0 | 0 | 0 |0 |
+| b | 0 | 1 | 1 | 1 | 1 | 1 |
+| b | 0 | 1 | 1 | 2 | 2 | 2 |
+| b | 0 | 1 | 1 | 2 | 3 | 3 |
+| a | 0 | 1 | 2 | 2 | 3 | 3 |
+| b | 0 | 1 | 2 | 3 | 3 | 4 |
 
 - Time complexity: O(n^2)
 - Space complexity: O(n^2)
