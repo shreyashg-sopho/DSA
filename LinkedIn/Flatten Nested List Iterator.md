@@ -1,15 +1,14 @@
 # Problem Name
 
 **Solution grade:** Near Optimal (Multiple solns exist but they are all nearly the same complexities)  
-**Concepts:** Flattening, Arrays
+**Concepts:** Flattening, Arrays, Queue , Stack
 **Time complexity:** O(n)  
 **Space complexity:** O(n)  
 **LeetCode Link:** [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)
 
 
 
-
-
+Note : In flattening based questions, it is always recursion or stack.
 
 
 ### Near Optimal 
