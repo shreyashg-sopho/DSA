@@ -1,7 +1,7 @@
 # Valid Perfect Square
 
 **Solution grade:** Optimal  
-**Concepts:** Binary Search, Two pointer
+**Concepts:** Binary Search, Two pointer <br>
 **Time complexity:** O(logN)  
 **Space complexity:** O(1)  
 **LeetCode Link:** [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square)
