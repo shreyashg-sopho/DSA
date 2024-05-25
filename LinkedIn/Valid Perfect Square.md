@@ -10,7 +10,7 @@
 ## Logic
 
 
-### Solution 1
+### Optimal Solution
 Some facts  :
 - Sqaure Root of number n is always less than n/2.
 
@@ -20,7 +20,7 @@ Simple bro, do a binary search between 1 and n/2 .
 - Space complexity: O(1)
 
 
-### Optimal Code
+###  Code
 
 ```java
 class Solution {
