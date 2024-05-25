@@ -4,7 +4,7 @@
 **Concepts:** Hashing, HashMap
 **Time complexity:** O(1) for all functionalities (delete, add , getRandom)  
 **Space complexity:** O(n)  
-**LeetCode Link:** [Shortest Word Distance II](https://leetcode.com/problems/insert-delete-getrandom-o1)
+**LeetCode Link:** [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1)
 
 
 ## Logic
