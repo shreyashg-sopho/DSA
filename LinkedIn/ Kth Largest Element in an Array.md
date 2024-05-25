@@ -1,10 +1,10 @@
-# Problem Name
+#  Kth Largest Element in an Array
 
 **Solution grade:** Optimal  
 **Concepts:** ABCD waLA
 **Time complexity:** O(n)  
 **Space complexity:** O(n)  
-**LeetCode Link:** [Shortest Word Distance II](https://leetcode.com/problems/KADASBDVBDSVBKJDS)
+**LeetCode Link:** [ Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 **Youtube link:** [Youtube](https://www.youtube.com/watch?v=AzER0wuL0QY)
 
 ## Logic
