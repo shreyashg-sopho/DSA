@@ -2,8 +2,8 @@
 
 **Solution grade:** Optimal  
 **Concepts:** DFS , BFS <br>
-**Time complexity:** O(n*m)  <br>
-**Space complexity:** O(n*m) <br>
+**Time complexity:** O(n * m)  <br>
+**Space complexity:**  O(n * m) <br>
 **LeetCode Link:** [Max Area Of Island](https://leetcode.com/problems//max-area-of-island)
 
 
