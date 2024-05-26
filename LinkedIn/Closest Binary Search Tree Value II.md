@@ -151,6 +151,10 @@ That's it. The queue is the result !!
 
 REPEATING AGAIN : This solution works because the top element in the queue is always the farthest of the k from the target.
 
+- Time complexity: O(n) [Only traversal through the tree once)
+- Space complexity: O(n + k) [size of queue] + DFS call stack trace in worst case could be N as well.
+
+
 #### Code
 
 
