@@ -1,9 +1,9 @@
 # Search in Rotated Sorted Array
 
 **Solution grade:** Optimal  
-**Concepts:** Binary Search , Arrays, Two pointer
-**Time complexity:** O(log N)  
-**Space complexity:** O(1)  
+**Concepts:** Binary Search , Arrays, Two pointer <br>
+**Time complexity:** O(log N)   <br>
+**Space complexity:** O(1)   <br>
 **LeetCode Link:** [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)
 
 
