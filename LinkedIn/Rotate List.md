@@ -1,9 +1,9 @@
 # Rotate List
 
 **Solution grade:** Optimal  
-**Concepts:** Linked List
-**Time complexity:** O(n)  
-**Space complexity:** O(1)  
+**Concepts:** Linked List <br>
+**Time complexity:** O(n)   <br>
+**Space complexity:** O(1)   <br>
 **LeetCode Link:** [Rotate List](https://leetcode.com/problems/rotate-list)
 
 ### Optimal Solution
