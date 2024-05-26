@@ -1,10 +1,10 @@
-# Problem Name
+#Closest Binary Search Tree Value II
 
 **Solution grade:** Closest Binary Search Tree Value II
-**Concepts:** ABCD waLA
+**Concepts:** Max Heap ,Queue, BST Traversal
 **Time complexity:** O(n)  
 **Space complexity:** O(n)  
-**LeetCode Link:** [Closest Binary Search Tree Value II](https://leetcode.com/problems/KADASBDVBDSVBKJDS)
+**LeetCode Link:** [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii)
 
 
 ## Logic
@@ -12,12 +12,32 @@
 
 
 
-### Near Optimal
+### Fine solution 
 
-Create a hashMap where we are storing all the indexes........
+#### Short Explanation :  (Can head for cosing right after this)
+Traverse the tree and Use max heap to maintain k min elements. That is it.
 
-- Time complexity: O(n * log K)
-- Space complexity: O(K)
+
+
+#### Why use a min heap ? No need to dicuss this in interview though.
+We basically can use a heap, a modified heap that stores element with the priority order being the difference.
+The heap will store the elements but will use difference for comparing. 
+
+One way to do is by using a heap :
+- Traverse the tree
+- add elements as per difference in the MinHeap
+- at the end pop the top k.
+
+
+But we can improve on this solution in terms of space and time by using MaxHeap instead of MinHeap.
+Logic : Kth element in min heap is N-Kth element in max Heap.
+
+
+
+
+
+- Time complexity: O(n * log K + k * log K) [ n time insert in K sized heap + k times pop in K sized heap]
+- Space complexity: O(K) [max heap of size K]
 
 
 ### Optimal Code
@@ -61,14 +81,21 @@ class Solution {
 
 ### Optimal Solution 
 
-In the abiove solution, that solution would have worked on any tree regardless of it being sorted or not because our heap was taking care of maintaining the order at the end of the day. So we really did not use the sorting property to our advantage.
+In the above solution, that solution would have worked on any tree regardless of it <br>
+being sorted or not because our heap was taking care of maintaining the order at the<br>
+end of the day. So we really did not use the sorting property to our advantage.
 
 
 Know that travering the BST will help us access elemtns in ascending order.
 
-So if let's maintain a queue and add k elements. (Intution is difficult but let's try with a queue).
+So if let's maintain a queue to main the k closest elements. <br>
+The one at the top will be the furthest one. (Intution is difficult but let's try with a queue).
+So let's see with an example.
 
 
+NOTE : This solution works because the top element in the queue is always the farthest of the k from the target.
+
+#### Dry Run
 ```
 Made up example : 
 say BST traversal becomes : [2,3,7,8]
@@ -122,7 +149,7 @@ queue =  [ 7, 8]
 ```
 That's it. The queue is the result !!
 
-
+REPEATING AGAIN : This solution works because the top element in the queue is always the farthest of the k from the target.
 
 #### Code
 
