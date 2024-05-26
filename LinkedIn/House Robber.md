@@ -59,18 +59,25 @@ we just need the last two values.
 ```java
 class Solution {
     public int rob(int[] nums) {
-        int sum = 0;
-        int []  money = new int[nums.length];
+       
+     
         if (nums.length == 0) return 0;
         if (nums.length == 1) return nums[0];
-        money[0] = nums[0];
-        money[1] = Math.max(nums[0], nums[1]);
+        
+        int minus2Home = nums[0];
+        int minus1Home = Math.max(minus2Home, nums[1]);
+         int maxSum = minus1Home;
+    
         for(int i = 2; i < nums.length; i++)
         {
-            money[i] = Math.max(money[i -2] + nums[i] , money[i -1]);
-            System.out.println( " " + money[i]);
+            maxSum = Math.max(minus2Home + nums[i] , minus1Home);
+            minus2Home = minus1Home;
+            minus1Home = maxSum;
+            
         }
-        return money[nums.length - 1];
+        return maxSum;
     }
 }
+
+
 ```
