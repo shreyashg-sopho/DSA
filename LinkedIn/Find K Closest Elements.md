@@ -1,18 +1,18 @@
 # Find K Closest Elements
 
 **Solution grade:** Optimal  
-**Concepts:** Sliding Window, 2 pointer, Binary Search, Priority Queue, Heap, Min Heap
-**Time complexity:** O(log n) + k  
-**Space complexity:** O(k)  [Only for storing the result, otherwise not reuired]
-**LeetCode Link:** [Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements)
+**Concepts:** Sliding Window, 2 pointer, Binary Search, Priority Queue, Heap, Min Heap <br>
+**Time complexity:** O(log n) + k   <br>
+**Space complexity:** O(k)  [Only for storing the result, otherwise not reuired] <br>
+**LeetCode Link:** [Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements) <br>
 
-NOTE: The final answer (which is indexes of closest k elements to x) might be required in sorted format.
+NOTE: The final answer (which is indexes of closest k elements to x) might be required in sorted format. <br>
 Lets call it FINAL_SORTING_REQUIRED for the context of code readability.
 
 
 ### Brute Force 
 
- Sort on the basis of abs diffrence of each index with the target. the minimum difference will be at first after sorting. 
+ Sort on the basis of abs diffrence of each index with the target. the minimum difference will be at first after sorting.  <br>
 ```
 
   PriorityQueue<int[]> pq = new PriorityQueue((a, b) -> (a -b)); //MinHeap of int[] -> 0 index will be abs diff, 1st index will index in input array
@@ -25,10 +25,10 @@ Lets call it FINAL_SORTING_REQUIRED for the context of code readability.
 
 ```
 
-This can be achieved by using a MinHeap. THis min heapo will be storing the minimum differences along with their indexes at the top.
+This can be achieved by using a MinHeap. THis min heapo will be storing the minimum differences along with their indexes at the top. <br>
 
 
-- Time complexity: O(n* log n + k* log n) [Construction of heap of size N and then popping K times)
+- Time complexity: O(n* log n + k* log n) [Construction of heap of size N and then popping K times) <br>
                    if  FINAL_SORTING_REQUIRED = true then more k*log k for final sorting is needed.
 - Space complexity: O(n)
 
@@ -77,7 +77,7 @@ Step 2 : Once we find target or index nearest to target, all we need to do is to
          Time = O(K)
 ```
 
-- Time complexity: O(log n) + k [log n for binary search and k for sliding window)
+- Time complexity: O(log n) + k (log n for binary search and k for sliding window)
 - Space complexity: O(k) result array size. (Had the question been to just print and not store, space would be O(1))
 
 #### Code
