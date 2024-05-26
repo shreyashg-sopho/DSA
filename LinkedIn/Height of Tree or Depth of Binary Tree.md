@@ -3,7 +3,7 @@
 **Solution grade:** Optimal  
 **Concepts:** DFS, Traversal on Tree (PreOrder or any DFS based)
 **Time complexity:** O(n)  
-**Space complexity:** O(log n)  
+**Space complexity:** O(n)  
 **LeetCode Link:** [Height of Tree or Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 **Youtube link:** [Youtube](https://www.youtube.com/watch?v=hyAqgckHUiA)
 
@@ -23,7 +23,7 @@ def int dfsHeightOfTree(root)
 ```
 
 - Time complexity: O(n)
-- Space complexity: O(log n)  [Recursion tack size will not be greater than heigh of tree]
+- Space complexity: O(n)  [Recursion stack size will be n in case of unbalanced tree]
 
 
 ### Optimal Code
