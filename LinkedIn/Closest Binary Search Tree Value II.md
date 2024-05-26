@@ -2,8 +2,8 @@
 
 **Solution grade:** Closest Binary Search Tree Value II
 **Concepts:** Max Heap ,Queue, BST Traversal
-**Time complexity:** O(n)  
-**Space complexity:** O(n)  
+**Time complexity:** O(n) [Only traversal through the tree once)
+**Space complexity:** O(n + k) [size of queue] + DFS call stack trace in worst case could be N as well.
 **LeetCode Link:** [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii)
 
 
