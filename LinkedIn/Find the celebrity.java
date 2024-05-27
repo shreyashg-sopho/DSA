@@ -1,6 +1,14 @@
 /* The knows API is defined in the parent class Relation.
       boolean knows(int a, int b); */
 
+// In this pseudo-code:
+
+// The findCelebrity function iterates over each person and checks if each one is a celebrity by calling the isCelebrity function.
+// The isCelebrity function checks if a given person (candidate) is a celebrity by verifying if they are known by everyone else and if they do not know anyone else.
+// Both functions utilize the knows method inherited from the Relation class to determine if one person knows another.
+
+
+
 // TIME AND SPACE
 // In the findCelebrity method, there is a loop that iterates over each person once, resulting in O(n) time complexity.
 // Inside the isCelebrity method, there is another loop nested within the first loop, resulting in O(n^2) time complexity.
