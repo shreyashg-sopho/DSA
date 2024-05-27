@@ -1,10 +1,10 @@
-# LCA Least Common Ancestor of a Binary Tree.md
+# LCA Binary Tree -  Least Common Ancestor of a Binary Tree
 
 **Solution grade:** Optimal  
 **Concepts:** Binary Tree, Trees, Traversal
 **Time complexity:** O(n) [all nodes traversed once] <br>
 **Space complexity:** O(n) [recursion stack] <br>
-**LeetCode Link:** [LCA Least Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)
+**LeetCode Link:** [LCA Binary Tree -  Least Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)
 **Youtube link:** [Youtube](https://www.youtube.com/watch?v=cOjLyASDJcc)
 
 ## Logic
