@@ -125,31 +125,33 @@ Also we need to override it's  removeEldestEntry method :
 ```
 #### Code
 ``` java
-import java.util.LinkedHashMap;
-import java.util.Map;
 
-public class LRUCache<K, V> {
-    private final int capacity;
-    private final LinkedHashMap<K, V> cache;
+
+
+class LRUCache {
+    int capacity;
+    LinkedHashMap<Integer, Integer> cache;
 
     public LRUCache(int capacity) {
         this.capacity = capacity;
-        this.cache = new LinkedHashMap<K, V>(capacity, 0.75f, true) {
+        
+        this.cache = new LinkedHashMap<>(5, 0.75f, true) {
+
             @Override
-            protected boolean removeEldestEntry(Map.Entry<K, V> eldest) {
+            protected boolean removeEldestEntry(Map.Entry<Integer, Integer> oldest) {
                 return size() > LRUCache.this.capacity;
             }
+            
         };
     }
 
-    public V get(K key) {
-        return cache.getOrDefault(key, null);
+    public int get(int key) {
+        return cache.getOrDefault(key, -1);
     }
 
-    public void put(K key, V value) {
+    public void put(int key, int value) {
         cache.put(key, value);
     }
 }
-
 
 ```
