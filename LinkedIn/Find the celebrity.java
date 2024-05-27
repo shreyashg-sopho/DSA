@@ -1,3 +1,5 @@
+https://leetcode.com/problems/find-the-celebrity/solution/
+
 /* The knows API is defined in the parent class Relation.
       boolean knows(int a, int b); */
 
