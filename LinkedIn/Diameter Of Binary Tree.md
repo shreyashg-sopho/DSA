@@ -40,8 +40,8 @@ In this case the diamter is : 6 5 2 1 3 8. That It IS_NOT_PASSING through root n
 
 So we can assume , the diameter formula will be :
 ```
-Diamter = (diameter_left_sub_tree, diameter_right_sub_tree, diameter passing through the root node)
-        = (diameter_left_sub_tree, diameter_right_sub_tree, height_left + height_right + 1)
+Diamter = max(diameter_left_sub_tree, diameter_right_sub_tree, diameter passing through the root node)
+        = max(diameter_left_sub_tree, diameter_right_sub_tree, height_left + height_right + 1)
 ```
  
 
