@@ -1,9 +1,9 @@
-# Minimum Adjacent Swaps To Make a Valid Array
+# Plates Between Candles
 
 **Solution grade:** Optimal  
 **Concepts:** Find min max, formula based, Math
-**Time complexity:** O(n)  <br>
-**Space complexity:** O(1)  <br>
+**Time complexity:** O(n + k)  [ O(n) for pre-processing and O[k] for k queries]  <br>
+**Space complexity:** O(n)  <br>
 **LeetCode Link:** [Plates Between Candles](https://leetcode.com/problems/plates-between-candles/) <br>
 
 
