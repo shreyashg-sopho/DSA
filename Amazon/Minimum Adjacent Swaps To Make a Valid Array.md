@@ -10,13 +10,15 @@
 
 ### Optimal Solution
 
- Sort on the basis of abs diffrence of each index with the target. the minimum difference will be at first after sorting.  <br>
+ Find min_index_of_min_value and max_index_of_max_value and just use the formula.
+ ```
+ min swaps = min_index_of_min_value + (length - 1 - max_index_of_max_value) - (overlapping)
+ ```
+### Example Walkthrough:
 ```
 
  Self made Ex : nums => [ 3,5,6,8,1,8]
 
-
- Example Walkthrough:
   Suppose nums = [3, 5, 6, 8, 1, 8].
   The minimum element is 1 at index 4 (minidx = 4).
   The maximum element is 8 at index 5 (maxidx = 5).
@@ -24,8 +26,9 @@
   Swaps required to move 8 to the back: (len(nums) - maxidx - 1) = 6 - 5 - 1 = 0.
   Since minidx < maxidx, no need to subtract 1.
   Total swaps: 4 + 0 = 4.
-
-Code logic :
+```
+### Code logic :
+```
  Find min_index_of_min_value = min_index_of 1 = 4
  Find max_index_of_max_value = mx_index_of 8 = 5
  if max_index_of_max_value >= min_index_of_min_value : 
