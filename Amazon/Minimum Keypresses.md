@@ -2,7 +2,7 @@
 
 **Solution grade:** Optimal  
 **Concepts:** Frequency Counting, Sorting  
-**Time complexity:** O(n)  <br>
+**Time complexity:** O(n log n)    <br>
 **Space complexity:** O(1)  <br>
 **LeetCode Link:** [Minimum Keypresses](https://leetcode.com/problems/minimum-keypresses)
 
@@ -10,29 +10,36 @@
 
 To determine the minimum keypresses needed to type a given string, we count the frequency of each character and sort these frequencies. The characters are assigned keypress weights based on their sorted positions:
 
-- First 9 characters: 1 keypress
-- Next 9 characters: 2 keypresses
-- Remaining characters: 3 keypresses
+- First 9 most frequent characters: 1 keypress
+- Next 9 most frequent characters: 2 keypresses
+- Remaining most frequent characters: 3 keypresses
 
-### Solution Steps
+### Solution Steps :
 
+```
 1. Count the frequency of each character in the input string using an integer array.
 2. Convert the frequency array to an `Integer[]` for sorting.
 3. Sort the array in descending order to prioritize high-frequency characters.
 4. Calculate the total keypresses based on the sorted frequencies.
+```
 
-### Example Walkthrough:
-
+### Example Walkthrough : (Self Example)
+ 
+```
 Suppose `s = "aaabbc"`.
 
 1. Frequency count:
-   - `characterFreqInWord = [3, 2, 1, 0, ..., 0]` (for 'a', 'b', 'c', ...)
+   - `characterFreqInWord = [3, 2, 1, 0, ..., 0]` (for 'a', 'b', 'c', ... 'z')
   
 2. After converting and sorting:
    - `freqArray = [3, 2, 1]`
    
 3. Calculating keypresses:
    - Keypresses = `3 * 1 (for 'a') + 2 * 1 (for 'b') + 1 * 2 (for 'c') = 3 + 2 + 2 = 7`
+```
+
+- Time complexity : O(n log n) [Because sorting is being used]
+- Space complexity: O(1) [ Only constant space of 26 is being used for the frequency array ]
 
 ### Code
 
