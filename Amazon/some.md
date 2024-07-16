@@ -18,14 +18,17 @@ This approach ensures that each query can be answered in constant time after an 
 ### Solution Overview
 
 ```
-1. **Left and Right Candle Arrays:** 
+1. Left and Right Candle Arrays:
+
    - `leftCandle[i]` stores the index of the nearest candle to the left of index `i`.
    - `rightCandle[i]` stores the index of the nearest candle to the right of index `i`.
 
-2. **Prefix Sum Array:**
+2. Prefix Sum Array:
+
    - `prefix[i]` keeps a cumulative count of plates up to index `i`, allowing quick calculations for any segment.
   
-3. **Query answer:**
+3. Query answer:
+
    - for query [a,b] meaning for "a" index to "b" index
    - nearest candle of "a" to the right = rightCandle[a]
    - nearest candle of "b" to the left = leftCandle[b]
