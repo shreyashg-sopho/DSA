@@ -17,6 +17,7 @@ This approach ensures that each query can be answered in constant time after an 
 
 ### Solution Overview
 
+```
 1. **Left and Right Candle Arrays:** 
    - `leftCandle[i]` stores the index of the nearest candle to the left of index `i`.
    - `rightCandle[i]` stores the index of the nearest candle to the right of index `i`.
@@ -29,6 +30,7 @@ This approach ensures that each query can be answered in constant time after an 
    - nearest candle of "a" to the right = rightCandle[a]
    - nearest candle of "b" to the left = leftCandle[b]
    - result (plates between a and b where each plate is surrounded by candles on both side ) = prefix[ leftCandle[b] ]  -  prefix[ rightCandle[a] ] 
+```
 
 - Time complexity:
   - Preprocessing: O(n)
@@ -50,9 +52,10 @@ prefixSum = [0, 1, 1, 2, 3, 3, 4, 5, 5, 6]
 The nearest left and right candle arrays are populated:
 leftCandle = [-1, -1, 2, 2, 2, 5, 5, 5, 5, 9]
 rightCandle = [2, 2, 2, 5, 5, 5, 9, 9, 9, 9]
-For each query, determine the range of plates using the nearest candles:
+
 ```
 ##### Querying part
+For each query, determine the range of plates using the nearest candles : 
 ```
 Query [1, 7]:
 
