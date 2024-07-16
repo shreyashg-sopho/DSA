@@ -30,7 +30,7 @@ This approach ensures that each query can be answered in constant time after an 
   - There entirely for  q quries = O(n + q)
 - Space complexity: O(n) (for the candle and prefix arrays)
 
-#### #Optimal Code
+#### Optimal Code
 
 ```java
 class Solution {
