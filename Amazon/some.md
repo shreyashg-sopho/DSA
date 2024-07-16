@@ -23,6 +23,12 @@ This approach ensures that each query can be answered in constant time after an 
 
 2. **Prefix Sum Array:**
    - `prefix[i]` keeps a cumulative count of plates up to index `i`, allowing quick calculations for any segment.
+  
+3. **Query answer:**
+   - for query [a,b] meaning for "a" index to "b" index
+   - nearest candle of "a" to the right = rightCandle[a]
+   - nearest candle of "b" to the left = leftCandle[b]
+   - result (plates between a and b where each plate is surrounded by candles on both side ) = prefix[ leftCandle[b] ]  -  prefix[ rightCandle[a] ] 
 
 - Time complexity:
   - Preprocessing: O(n)
@@ -30,6 +36,34 @@ This approach ensures that each query can be answered in constant time after an 
   - There entirely for  q quries = O(n + q)
 - Space complexity: O(n) (for the candle and prefix arrays)
 
+#### Dry run (Self Example)
+
+##### Pre Processing
+```
+Suppose s = "|*|**|" and queries = [[1, 7], [0, 8]].
+
+The prefix sum of plates is calculated:
+
+s = "**|***|**|"
+prefixSum = [0, 1, 1, 2, 3, 3, 4, 5, 5, 6]
+
+The nearest left and right candle arrays are populated:
+leftCandle = [-1, -1, 2, 2, 2, 5, 5, 5, 5, 9]
+rightCandle = [2, 2, 2, 5, 5, 5, 9, 9, 9, 9]
+For each query, determine the range of plates using the nearest candles:
+```
+##### Querying part
+```
+Query [1, 7]:
+
+Nearest candles: rightCandle[1] = 2 and leftCandle[7] = 5
+Plates between candles: prefixSum[5] - prefixSum[2] = 3 - 1 = 2
+Query [0, 8]:
+
+Nearest candles: rightCandle[0] = 2 and leftCandle[8] = 5
+Plates between candles: prefixSum[5] - prefixSum[2] = 3 - 1 = 2
+
+```
 #### Optimal Code
 
 ```java
