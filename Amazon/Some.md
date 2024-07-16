@@ -4,7 +4,7 @@
 **Concepts:** Find min max, formula based, Math
 **Time complexity:** O(n)  <br>
 **Space complexity:** O(1)  <br>
-**LeetCode Link:** [Minimum Adjacent Swaps To Make a Valid Array]([https://leetcode.com/problems/find-k-closest-elements](https://leetcode.com/problems/minimum-adjacent-swaps-to-make-a-valid-array/)) <br>
+**LeetCode Link:** [Plates Between Candles](https://leetcode.com/problems/plates-between-candles/) <br>
 
 
 
