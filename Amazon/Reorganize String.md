@@ -1,7 +1,7 @@
 # Reorganize String
 
 **Solution grade:** Optimal  
-**Concepts:** Frequency Counting, Priority Queue  
+**Concepts:** Frequency Counting, Priority Queue , Max heap
 **Time complexity:** O(n log n)  
 **Space complexity:** O(n)  
 **LeetCode Link:** [Reorganize String](https://leetcode.com/problems/reorganize-string/)
@@ -10,13 +10,13 @@
 
 To reorganize a string so that no two adjacent characters are the same, we can use a priority queue to arrange characters based on their frequencies. The idea is to always place the highest frequency character first, but ensure that it doesn't repeat consecutively.
 
-### Solution Steps
+### optimal Solution 
 
 1. Count the frequency of each character in the input string using an integer array.
 2. Use a priority queue to store characters sorted by their frequencies in descending order.
 3. Construct the result string by repeatedly adding the highest frequency character, and ensure that no two adjacent characters are the same by using the next available character when necessary.
 
-### Example Walkthrough:
+#### Example Walkthrough:
 ```
 Suppose `s = "aabbac"`.
 
@@ -30,11 +30,14 @@ Suppose `s = "aabbac"`.
    - Add 'a', then 'b', then 'a', then 'c', then 'a', then 'b'.
    - Result: `"abacab"`
 ```
-### Time Complexity 
+#### Time and Space Complexities 
 
-- 
+Space complexity: O(n)
+Time complexity : O(n log n)   (PQ/Max heap making dominates the overall time complecity)
 
-### Code
+
+
+#### Code
 
 ```java
 import java.util.*;
