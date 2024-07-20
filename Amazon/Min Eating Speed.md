@@ -43,9 +43,13 @@ Suppose `piles = [4, 7, 1, 9, 3]` and `h = 6`.
    - Check if `middle` is a valid eating speed by summing the required hours for all piles.
      - `hourSpent = ceil(4 / 6) + ceil(7 / 6) + ceil(1 / 6) + ceil(9 / 6) + ceil(3 / 6) = 1 + 2 + 1 + 2 + 1 = 7`
      - Since 7 > 6, adjust `left = middle + 1 = 7`
+
+
    - Calculate `middle = (left + right) / 2 = 8`
      - `hourSpent = ceil(4 / 8) + ceil(7 / 8) + ceil(1 / 8) + ceil(9 / 8) + ceil(3 / 8) = 1 + 1 + 1 + 2 + 1 = 6`
      - Since 6 <= 6, adjust `right = middle = 8`
+
+
    - Calculate `middle = (left + right) / 2 = 7`
      - `hourSpent = ceil(4 / 7) + ceil(7 / 7) + ceil(1 / 7) + ceil(9 / 7) + ceil(3 / 7) = 1 + 1 + 1 + 2 + 1 = 6`
      - Since 6 <= 6, adjust `right = middle = 7`
