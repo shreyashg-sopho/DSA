@@ -17,8 +17,8 @@ To reorganize a string so that no two adjacent characters are the same, we can u
 3. Construct the result string by repeatedly adding the highest frequency character, and ensure that no two adjacent characters are the same by using the next available character when necessary.
 
 ### Example Walkthrough:
-
-Suppose `s = "aaabbc"`.
+```
+Suppose `s = "aabbac"`.
 
 1. Frequency count:
    - `charFreq = [3, 2, 1, 0, ..., 0]` (for 'a', 'b', 'c', ...)
@@ -29,6 +29,10 @@ Suppose `s = "aaabbc"`.
 3. Constructing the result:
    - Add 'a', then 'b', then 'a', then 'c', then 'a', then 'b'.
    - Result: `"abacab"`
+```
+### Time Complexity 
+
+- 
 
 ### Code
 
